@@ -2,3 +2,8 @@
   {{title}}
 </h1>
 <router-outlet></router-outlet>
+<p>Read only tag</p>
+<tag-input [ngModel]="['Javascript', 'Typescript']" [readonly]="true"></tag-input>
+
+<p>Model-based tag</p>
+<tag-input [(ngModel)]='mytags'></tag-input>
